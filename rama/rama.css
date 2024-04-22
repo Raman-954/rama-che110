@@ -1,0 +1,277 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+/* Slideshow Styles */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+#overview h2 {
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 30px;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+/* Fade animation */
+.fade {
+    animation: fade 1.5s ease-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Impact Section Styles */
+#impact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#impact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact-item {
+    text-align: center;
+}
+
+.impact-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.impact-item h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.impact-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 40px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Specific Styles */
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+section ul, section ol {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+section ul li, section ol li {
+    margin-bottom: 10px;
+}
+
+/* Resource Section Styles */
+#resources {
+    padding: 50px 0;
+}
+
+#resources h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.resource-item {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.resource-item img {
+    width: 100%;
+    max-width: 150px; /* Adjust the maximum width of the logos as needed */
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.resource-item img:hover {
+    transform: scale(1.1); /* Add hover effect */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+footer p {
+    margin: 20px 0 0;
+    font-size: 0.8em;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* For screens smaller than 768px (tablets and phones) */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Reduce font size for smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    nav ul li a {
+        display: block; /* Make links full width */
+        padding: 10px; /* Add padding for touch targets */
+    }
+
+    main {
+        padding: 20px; /* Add padding */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer sections vertically */
+    }
+
+    .footer-section {
+        margin-bottom: 30px; /* Add margin between footer sections */
+    }
+
+    .resource-item img {
+        margin-bottom: 10px; /* Adjust spacing between resource logos */
+    }
+}
+
